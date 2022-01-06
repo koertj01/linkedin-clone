@@ -5,12 +5,12 @@ import firebase from "firebase";
 // import {getFirestore} from "firebase/firestore/lite"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCxHg5r3mqadJW3YXpD5aJKuYA9o396GIc",
-  authDomain: "linkedin-clone-ef7fc.firebaseapp.com",
-  projectId: "linkedin-clone-ef7fc",
-  storageBucket: "linkedin-clone-ef7fc.appspot.com",
-  messagingSenderId: "241583331871",
-  appId: "1:241583331871:web:d71b056640d7f17b03532a",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig); //connect to our database

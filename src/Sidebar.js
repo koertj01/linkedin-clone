@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
-import { Avatar } from "@material-ui/core/Avatar";
+// import { Avatar } from "@material-ui/core/Avatar";
+import { Avatar } from "@material-ui/core";
 
 function Sidebar() {
   const recentItem = (topic) => (
